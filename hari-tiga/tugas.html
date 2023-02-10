@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = parseInt(prompt('Masukan Nilai ke-1')); // inputan user
+      let b = parseInt(prompt('Masukan Nilai ke-2'));
+      let c = parseInt(prompt('Masukan Nilai ke-3'));
+      let d = parseInt(prompt('Masukan Nilai ke-4'));
+      let e = parseInt(prompt('Masukan Nilai ke-5'));
+
+      let mean = (a + b + c + d + e) / 5; //
+      let hasil = Math.floor(mean);
+      alert(`Rata-ratanya adalah: ${hasil}`);
+
+      if (hasil % 2 === 0) {
+        alert(`${hasil} Genap`);
+      } else {
+        alert(`${hasil} Ganjil`);
+      }
+    </script>
+  </body>
+</html>

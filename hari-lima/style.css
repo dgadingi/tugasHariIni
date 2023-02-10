@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+.main {
+  height: 567px;
+  width: 1300px;
+}
+.img {
+  border: 1px solid black;
+}
+
+.awal {
+  height: 567px;
+  width: 500px;
+  margin: auto;
+}
+
+.coomingsoon {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #e6ecfc;
+  width: fit-content;
+  padding: 3px;
+  color: rgb(0, 0, 198);
+}
+
+.text {
+  margin-bottom: 50px;
+}
+
+.text > * {
+  font-size: 40px;
+}
+
+.text .utama {
+  margin-bottom: 5px;
+}
+
+.loggin {
+  margin-bottom: 70px;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+}
+
+.artikel {
+  padding-bottom: 50px;
+}
+
+.loggin span {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+}
+.loggin > span > a {
+  text-decoration: none;
+  color: white;
+  font-size: small;
+  text-align: center;
+}
+
+.artikel,
+p {
+  color: gray;
+}
+
+.img img {
+  height: 560px;
+  width: 480px;
+}
+
+.img {
+  border: 5px solid black;
+  height: 560px;
+  width: 800px;
+  z-index: 999;
+}

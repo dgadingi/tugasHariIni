@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function panggilFunction3() {
+        console.log('panggilFunction3 dipanggil');
+      }
+
+      function panggilFunction2() {
+        console.log('panggilFunction2 dipanggil');
+      }
+
+      function panggilFunction1() {
+        console.log('panggilFunction1 dipanggil');
+      }
+      debugger;
+      panggilFunction1();
+      panggilFunction2();
+      panggilFunction3();
+      // jangan numpuk call stacknya
+      // rekursif in
+
+      // function panggilFunction1() {
+      //   console.log('panggilFunction1 dipanggil');
+      //   function panggilFunction2() {
+      //     console.log('panggilFunction2 dipanggil');
+      //     function panggilFunction3() {
+      //       console.log('panggilFunction3 dipanggil');
+      //     }
+      //     panggilFunction3();
+      //   }
+      //   panggilFunction2();
+      // }
+      // debugger;
+      // panggilFunction1();
+    </script>
+  </body>
+</html>
