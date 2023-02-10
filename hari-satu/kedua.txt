@@ -1,3 +1,0 @@
-menambah test.txt
-menambah baris di test.txt
-nambah
