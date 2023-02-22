@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slide {
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        margin-left: 300px;
+        margin-top: 50px;
+        list-style-type: none;
+        border: 10px solid goldenrod;
+        background-color: black;
+
+        -webkit-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+        transition: opacity 1s;
+      }
+
+      .active {
+        opacity: 1;
+      }
+
+      .slide img {
+        width: 600px;
+        padding-top: 4px;
+      }
+
+      .slide p:last-child {
+        position: absolute;
+        color: white;
+        left: 250px;
+        bottom: 0;
+      }
+
+      .slide p:first-child {
+        position: absolute;
+        color: white;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="slides">
+      <li class="slide active">
+        <p>1 / 3</p>
+        <img src="../dom3/img/g1.jpg" alt="" />
+        <p>pemandangan 1</p>
+      </li>
+      <li class="slide">
+        <p>2 / 3</p>
+        <img src="../dom3/img/g2.jpg" alt="" />
+        <p>pemandangan 2</p>
+      </li>
+      <li class="slide">
+        <p>3 / 3</p>
+        <img src="../dom3/img/g3.jpg" alt="" />
+        <p>pemandangan 3</p>
+      </li>
+    </ul>
+
+    <script>
+      let slides = document.querySelectorAll('#slides .slide');
+      let currentSlide = 0;
+      let slideInterval = setInterval(nextSlide, 2000);
+
+      function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'slide active';
+      }
+    </script>
+  </body>
+</html>
